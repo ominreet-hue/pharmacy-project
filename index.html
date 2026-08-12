@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23CCD5AE'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%232F3A24' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MedFind — Find your medicine. Compare your options. Save your time." />
+    <title>MedFind — Find your medicine easily</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header" data-header></header>
+
+    <main class="page">
+      <div class="container">
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="heroTitle">
+          <h1 class="hero__title" id="heroTitle">Find your medicine without the wait</h1>
+          <p class="hero__desc">
+            Search for medicines, discover alternatives, compare prices, and find the option that suits you.
+          </p>
+          <form class="hero__search" id="heroSearchForm" role="search">
+            <label for="heroSearch" class="sr-only">Enter medicine name</label>
+            <input
+              type="text"
+              id="heroSearch"
+              placeholder="Enter medicine name..."
+              autocomplete="off"
+            />
+            <button class="btn btn--primary" type="submit">Search</button>
+          </form>
+          <p class="hero__or">Or upload your prescription</p>
+          <div class="hero__upload">
+            <a class="btn btn--outline" href="prescription.html">Upload Prescription</a>
+            <a class="btn btn--ghost" href="medicines.html">Browse All Medicines</a>
+          </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section" aria-labelledby="catsTitle">
+          <h2 class="section-title" id="catsTitle">Browse Medicines</h2>
+          <p class="section-subtitle">Pick a category to explore medicines for your needs.</p>
+          <div class="grid grid-4" id="categoryGrid"></div>
+        </section>
+
+        <!-- Featured -->
+        <section class="section" aria-labelledby="featuredTitle">
+          <h2 class="section-title" id="featuredTitle">Popular Medicines</h2>
+          <p class="section-subtitle">A selection of commonly searched medicines.</p>
+          <div class="grid grid-auto" id="featuredGrid"></div>
+        </section>
+
+        <!-- How it works -->
+        <section class="section" aria-labelledby="howTitle">
+          <h2 class="section-title" id="howTitle">How MedFind Works</h2>
+          <div class="grid grid-3">
+            <div class="card card--soft text-center">
+              <div style="font-size:2.5rem">🔍</div>
+              <h3 class="mt-2">Search</h3>
+              <p class="text-muted mt-2">Find medicines by name, ingredient, or category in seconds.</p>
+            </div>
+            <div class="card card--soft text-center">
+              <div style="font-size:2.5rem">⚖️</div>
+              <h3 class="mt-2">Compare</h3>
+              <p class="text-muted mt-2">See alternatives and compare prices side by side to save money.</p>
+            </div>
+            <div class="card card--soft text-center">
+              <div style="font-size:2.5rem">📍</div>
+              <h3 class="mt-2">Find Pharmacies</h3>
+              <p class="text-muted mt-2">Locate nearby pharmacies that stock the medicine you need.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer" data-footer></footer>
+
+    <script type="module" src="/js/home.js"></script>
+  </body>
+</html>

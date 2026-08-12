@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23CCD5AE'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%232F3A24' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedFind — Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header" data-header></header>
+
+    <main class="page">
+      <div class="container">
+        <div class="form__card">
+          <h1 class="form__title">Welcome back</h1>
+          <p class="form__subtitle">Log in to continue searching for your medicines.</p>
+
+          <form id="loginForm" novalidate>
+            <div class="field" id="field-login">
+              <label class="field__label" for="login">Email or Phone Number</label>
+              <input class="field__input" type="text" id="login" name="login" placeholder="you@example.com" autocomplete="username" />
+              <div class="field__error">Please enter your email or phone number.</div>
+            </div>
+
+            <div class="field" id="field-password">
+              <label class="field__label" for="password">Password</label>
+              <input class="field__input" type="password" id="password" name="password" placeholder="Your password" autocomplete="current-password" />
+              <div class="field__error">Please enter your password.</div>
+            </div>
+
+            <button class="btn btn--primary btn--block btn--lg" type="submit">Log In</button>
+          </form>
+
+          <p class="form__alt">
+            <a href="#" id="forgotLink">Forgot Password?</a>
+          </p>
+          <p class="form__alt">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" data-footer></footer>
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>
